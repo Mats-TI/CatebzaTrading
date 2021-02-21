@@ -2,7 +2,7 @@ import React from 'react';
 import Images from "./imgDatabase";
 import Cards from "./carouselCards";
 import {Carousel} from "react-responsive-carousel";
-import "./style.css";
+import "./style.css" ; import "./styleIpad.css"; import "./styleMobile.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 
 class AtchaarGallery extends React.Component{

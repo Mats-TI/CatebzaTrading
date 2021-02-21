@@ -2,7 +2,7 @@
 /* eslint-disable no-useless-constructor */
 import React from 'react';
 import catebzaLogo from "./Media/CatebzaLogo.png"
-import "./style.css"
+import "./style.css" ; import "./styleIpad.css"; import "./styleMobile.css"
 import Cards from "./carouselCards"
 import Carousel from "react-elastic-carousel"
 import Image from "./imgDatabase"
@@ -20,6 +20,7 @@ class HomePage extends React.Component{
 
         return(
         <div className="wrapper" id="wrapper">
+            
             <section className="info">
                 <img src={catebzaLogo} alt="logo"/>
                 <h2>Your Ideal stop for a range of fruit produce,atchaar, atchaar spices and dye! Available for both wholesale and retail orders.</h2>
@@ -34,7 +35,7 @@ class HomePage extends React.Component{
             </Carousel>
         </div>
 
-            <p className="bottomLinks"><Link to="/products/Atchaar">Atchaar</Link> | <Link to="/products/AtchaarSpices">Spices</Link> | <Link to="/products/AtchaarDye">Dye</Link> | <Link to="/products/bananas">Bananas</Link></p>
+            <p className="bottomLinks"><Link to="/products/Atchaar" style={{color:"black"}} title="View Atchaar">Atchaar</Link> | <Link to="/products/AtchaarSpices" style={{color:"black"}} title="View Atchaar Spices">Spices</Link> | <Link to="/products/AtchaarDye" style={{color:"black"}} title="View Atchaar Dye">Dye</Link> | <Link to="/products/bananas" style={{color:"black"}} title="View Bananas">Bananas</Link></p>
     
         </div>
         )

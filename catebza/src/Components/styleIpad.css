@@ -1,0 +1,299 @@
+@media only screen and (min-width:768px) and (max-width:1265px){
+    #root{
+        padding: 0;
+        margin:0;
+        overflow-y: visible;
+    }
+    @font-face{
+        font-family: miriamBold;
+        src:url("./Miriam_Libre/MiriamLibre-Bold.ttf")
+    }
+    @font-face{
+        font-family: miriamRegular;
+        src:url("./Miriam_Libre/MiriamLibre-Regular.ttf");
+    }
+    h1{
+        font-family: miriamBold;
+    }
+
+    nav{
+        display: flex;
+        min-width: 100vh;
+        flex-wrap: wrap;
+        background-color: #35EF2E;
+        font-family:miriamBold ;
+        height: 100px;
+        
+        
+    }
+    .mainNavParentDiv{
+        position: sticky;
+        top:0;
+        z-index: 1000;
+    }
+    .mobileMenu{
+        display:none;
+    }
+    .mobileSideNav{
+        display:none;
+    }
+    nav ul{
+        height: 100px;
+        margin: 0 auto;
+    }
+    nav li{
+        display: inline-block;
+        line-height: 100px;
+        padding-left: 25px;
+        font-size:15px
+    }
+    
+    .mainLogo{
+        height: 100px;
+        font-size:20px;
+        padding-top: 5px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        margin-left: 5%;
+    }nav a{
+        color: black;
+    }
+    .mainLogo img{
+        margin:0 65%;
+        width:50px;
+        height:50px;
+    }
+    .mainLogo p{
+        height: 10px;
+        margin-top: 10px;
+    }
+    .contactDetails{
+        font-size: 12px;
+        margin-right: 5%;
+        display: grid;
+        grid-template-columns: 50px calc(100%-50px);
+        grid-template-rows: 1fr 1fr;
+        margin-left:auto;
+        grid-template-areas:
+            "icon number1"
+            ". number2";
+        padding-top: 15px;
+           
+    }.phoneIcon{
+        width:25px;
+        height: 35px;
+        grid-area: icon;
+    }
+    .contactDetails .p1{
+        grid-area:number1;
+    }
+    .contactDetails .p2{
+        grid-area: number2
+    }
+    .info{
+        width: 80%;
+        margin: 0 auto;
+        height: 35%;
+        overflow: hidden;
+    }
+    
+    .info img{
+        height: 50px;
+        margin-top: 30px;
+        border: groove 10px #35EF2E;
+        border-radius: 10px;
+    }
+    .info h2{
+        height: 100%;
+        white-space:pre-line;
+        font-size:20px;
+    }
+    .wrapper{
+        width: 100%;
+        margin: 0 auto;
+        min-height: 100vh;
+        font-family:miriamRegular;
+        background-color: #d0f2bd;
+    }
+    .bottomLinks{
+        font-size:20px;
+        height: 5%;
+        margin-top: 4%;
+    }
+    .productsDiv{
+        display:grid;
+        width:80%;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "banana atchaar"
+            "dye spice";
+        font-family: miriamBold;
+        padding-top:25px;
+    }
+    .bananaSection{
+        grid-area:banana;
+        visibility:visible;
+    }
+    .atchaarSection{
+        grid-area:atchaar;
+    }
+    .dyeSection{
+        grid-area:dye;
+    }
+    .spiceSection{
+        grid-area:spice
+    }
+    .productsDiv img{
+        width:150px;
+        height:150px;
+        border:solid 7.5px  green;
+        border-radius:20px;
+    }
+    .productsHeading{
+        font-size:25px;
+    }
+    .productSection{
+        background-color: #d0f2bd;
+        min-height:100vh;
+    }
+    h1{
+        margin-top:0;
+        padding-top:2%;
+    }
+    .contactDiv{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        width:90%;
+        margin: 10% auto;
+        font-family:miriamBold;
+    }
+    form{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-areas:
+            "nameLabel nameInput"
+            "telLabel telInput"
+            "mailLabel mailInput"
+            "msgLabel msgInput"
+            "button button";
+        grid-gap:10%;
+    }
+    input,textarea{
+        border: groove 3px #35EF2E;
+        width:75%;
+        font-weight:bold;
+    }
+    label{
+        font-size:15px;
+        text-align: left;
+    }
+    #googleMapsSection{
+        
+        width:60%;
+        height: 100%;
+        margin:auto auto;
+    }
+    .contactSection{
+        min-height:100vh;
+        margin: 0 auto;
+        background-color: #d0f2bd;
+    }
+    .contactSection h1{
+        font-size:25px;
+    }
+    .contactSection h2{
+        font-size:20px;
+    }
+    #nameLabel{
+        grid-area:nameLabel
+    }
+    #telLabel{
+        grid-area: telLabel;
+    }
+    #mailLabel{
+        grid-area: mailLabel;
+    }
+    #mgsLabel{
+        grid-area:msgLabel;
+    }
+    #nameinput{
+        grid-area:nameInput
+    }
+    #telInput{
+        grid-area:telInput
+    }
+    #mailInput{
+        grid-area: mailInput;
+    }
+    #msgInput{
+        grid-area: msgInput;
+        height: 150px;
+    }
+    button{
+        grid-area: button;
+        width:20%;
+        margin:0 auto;
+        height:150%;
+        background-color: green;
+        font-weight:bolder;
+        text-transform: uppercase;
+        color:white;
+        cursor:pointer;
+    }
+    
+    #aboutUs{
+        font-family:miriamBold;
+        width:80%;
+        margin: 0 auto;
+    }
+    
+    .card{
+        
+        height: 100%;
+        width:100%;
+        align-items: center;
+        margin: 0 auto;
+        color:white;
+    
+    
+    }
+    .CarouselDiv{
+        width:80%;
+        margin:0 auto;
+    }
+    .banana-front,.atchaar-front,.atchaarDye-front,.atchaarSpice-front{
+        position: relative;
+        width:150px;
+        margin: 0 auto;
+    
+    }
+    .viewMore{
+        position: absolute;
+        bottom: 25%;
+        top:25%;
+        left:25%;
+        right:25%;
+        background-image:url(./Media/viewMore.png);
+        background-size: contain;
+        z-index: 2;
+        opacity:0;
+        
+    }
+    .control-arrow{
+        width:5%;
+    }
+    .banana-front:hover .viewMore, .atchaar-front:hover .viewMore, .atchaarDye-front:hover .viewMore, .atchaarSpice-front:hover .viewMore{
+        opacity: 1;
+        transition: 0.5s ease-in-out;
+        
+    }
+    .ReelPages .card{
+        height: 80vh;
+    
+    }
+    .carousel-root{
+        width:90%;
+        margin: 1% auto;
+    }
+    }

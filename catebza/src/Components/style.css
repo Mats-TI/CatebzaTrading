@@ -1,3 +1,4 @@
+@media only screen and (min-width:1266px){
 #root{
     padding: 0;
     margin:0;
@@ -28,10 +29,13 @@ nav{
     top:0;
     z-index: 1000;
 }
+.mobileSideNav{
+    display: none;
+}
 nav ul{
     height: 100px;
     margin-top: 0;
-    margin-right: 200px;
+    margin:0 auto;
     
 }
 nav li{
@@ -39,6 +43,9 @@ nav li{
     line-height: 100px;
     padding-left: 50px;
     font-size:20px
+}
+.mobileMenu{
+    display:none;
 }
 
 .mainLogo{
@@ -63,6 +70,7 @@ nav li{
 .contactDetails{
     font-size: 15px;
     margin-right: 5%;
+    margin-left: auto;
     display: grid;
     grid-template-columns: 50px calc(100%-50px);
     grid-template-rows: 1fr 1fr;
@@ -104,15 +112,16 @@ nav li{
 .wrapper{
     width: 100%;
     margin: 0 auto;
-    height: 100vh;
+    min-height: 100vh;
     font-family:miriamRegular;
-    background-image: linear-gradient(180deg,#d0f2bd,green);
+    background-color: #d0f2bd;
 }
 .bottomLinks{
     font-size:20px;
     height: 5%;
     margin-top: 4%;
 }
+
 .productsDiv{
     display:grid;
     width:80%;
@@ -139,11 +148,11 @@ nav li{
 .productsDiv img{
     width:200px;
     height:210px;
-    border:solid 10px  white;
+    border:solid 7.5px  green;
     border-radius:20px;
 }
 .productSection{
-    background-image:linear-gradient(180deg,#d0f2bd, green);
+    background-color: #d0f2bd;
 }
 h1{
     margin-top:0;
@@ -153,7 +162,7 @@ h1{
     display: grid;
     grid-template-columns:1fr 1fr;
     width:80%;
-    margin: 0 auto;
+    margin: 5% auto;
     font-family:miriamBold
 }
 form{
@@ -277,6 +286,7 @@ button{
 .carousel-root{
     width:90%;
     margin: 1% auto;
+}
 }
 
 
