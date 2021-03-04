@@ -2,6 +2,7 @@
     #root{
         padding: 0;
         margin:0;
+        overflow-x: hidden;
     }
     @font-face{
         font-family: miriamBold;
@@ -24,8 +25,8 @@
         
     }
     .mainNavParentDiv{
-        position: sticky;
-        top:0;
+        position: fixed;
+    
         z-index: 1000;
     }
     nav ul{
@@ -86,12 +87,14 @@
         display: block;
         margin-top: 25px;
         text-align:left;
-        margin:25px auto;
+        margin:25px 10px;
+    }
+    .phone-No{
+        font-size: 80%;
     }
     .contactDetails{
         font-size: 10px;
         margin-left: auto;
-        display: grid;
         grid-template-columns: 50px calc(100%-50px);
         grid-template-rows: 1fr 1fr;
     
@@ -133,16 +136,17 @@
     }
     .wrapper{
         width: 100%;
-        margin: 0 auto;
-        min-height: 100vh;
+        margin: 0px auto;
+        padding-top: 75px;
+        min-height: calc(100vh - 75px);
         font-family:miriamRegular;
-        
+        padding-bottom: 2.5%;
         background-color: #d0f2bd;
     }
     .bottomLinks{
         font-size:15px;
-        height: 5%;
-        margin-top: 4%;
+        
+        margin-top: 0 auto;
     }
     .productsHeading{
         font-size:20px;
@@ -182,6 +186,10 @@
     }
     .productSection{
         background-color: #d0f2bd;
+        min-height: 100vh;
+        padding-top: 75px;
+        overflow-x:auto;
+        min-width: 100vw;
     }
     h1{
         margin-top:0;
@@ -200,6 +208,7 @@
         font-weight:bold;
         margin: 8px auto;
         font-family: miriamBold;
+        font-size:10px;
 
     }
     label{
@@ -218,11 +227,15 @@
         cursor:pointer;
         font-size: 15px;
     }
+    textarea{
+        height: 75px;
+    }
     .contactSection{
         min-height:100vh;
         margin: 0 auto;
         background-color: #d0f2bd;
         font-family: miriamBold;
+        padding-top: 75px;
     }
     #googleMapsSection{
         width:60%;
@@ -252,9 +265,12 @@
     
     
     }
+    .card img{
+        width:100%;
+    }
     .CarouselDiv{
         width:80%;
-        margin:0 auto;
+        margin:20% auto;
     }
     .banana-front,.atchaar-front,.atchaarDye-front,.atchaarSpice-front{
         position: relative;
@@ -274,20 +290,42 @@
         opacity:0;
         
     }
-    .control-arrow{
-        width:5%;
-    }
     .banana-front:hover .viewMore, .atchaar-front:hover .viewMore, .atchaarDye-front:hover .viewMore, .atchaarSpice-front:hover .viewMore{
         opacity: 1;
         transition: 0.5s ease-in-out;
         
     }
     .ReelPages .card{
-        height: 80vh;
+        height: 100%;
     
     }
     .carousel-root{
         width:90%;
         margin: 1% auto;
+    }
+    .rec-item-wrapper .card img{
+        margin-top: 10%;
+        border:groove 5px #d0f2bd;
+    }
+    .ReelPages{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .productWrapper{
+        width: 100%;
+        margin: 0 auto;
+        min-height: calc(100vh - 75px);
+        font-family:miriamRegular;
+        display: flex;
+        background-color: #d0f2bd;
+        align-items: center;
+        padding-top: 75px;
+    }
+    .sc-bdfBwQ{
+        height: 15px;
+        min-width:15px;
+        text-align: center;
+        line-height:10px;
+        font-size:100%;
     }
     }

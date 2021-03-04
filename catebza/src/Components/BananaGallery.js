@@ -1,7 +1,7 @@
 import React from 'react';
 import Images from "./imgDatabase";
 import Cards from "./carouselCards";
-import {Carousel} from "react-responsive-carousel";
+import Carousel from "react-elastic-carousel";
 import "./style.css" ; import "./styleIpad.css"; import "./styleMobile.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 
@@ -11,12 +11,18 @@ class Gallery extends React.Component{
     }
     render(){
         return(
+            <div className="productWrapper"> 
             <div className="ReelPages">
-                <Carousel showArrows={true} >
-                    <Cards name={Images.img1}/>
-                    <Cards name={Images.img2}/>
-                    <Cards name={Images.img3}/>
+                <Carousel >
+                    
+                    <Cards name={Images.ban2}/>
+                    <Cards name={Images.ban3}/>
+                    <Cards name={Images.ban4}/>
+                    <Cards name={Images.ban5}/>
+                    <Cards name={Images.ban6}/>
+                    <Cards name={Images.ban7}/>
                 </Carousel>
+            </div>
             </div>
         )
     }

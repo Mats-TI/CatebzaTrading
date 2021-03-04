@@ -2,6 +2,7 @@
 #root{
     padding: 0;
     margin:0;
+    overflow-x: hidden;
 }
 @font-face{
     font-family: miriamBold;
@@ -112,9 +113,10 @@ nav li{
 .wrapper{
     width: 100%;
     margin: 0 auto;
-    min-height: 100vh;
+    min-height: 110vh;
     font-family:miriamRegular;
     background-color: #d0f2bd;
+    padding-bottom: 2.5%;
 }
 .bottomLinks{
     font-size:20px;
@@ -153,6 +155,7 @@ nav li{
 }
 .productSection{
     background-color: #d0f2bd;
+    min-height:100vh;
 }
 h1{
     margin-top:0;
@@ -249,6 +252,9 @@ button{
 
 
 }
+.card img{
+    width:50%;
+}
 .CarouselDiv{
     width:80%;
     margin:0 auto;
@@ -280,13 +286,31 @@ button{
     
 }
 .ReelPages .card{
-    height: 80vh;
+    height: 100%;
 
 }
 .carousel-root{
     width:90%;
     margin: 1% auto;
 }
+.rec-item-wrapper .card img{
+    margin-top: 10%;
+    border:groove 10px #d0f2bd;
+}
+.ReelPages{
+    width: 85%;
+    margin:0 auto;
+
+}
+    .productWrapper{
+        width: 100%;
+        margin: 0 auto;
+        min-height: calc(100vh);
+        font-family:miriamRegular;
+        display: flex;
+        background-color: #d0f2bd;
+        align-items: center;
+    }
 }
 
 

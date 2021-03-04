@@ -3,6 +3,7 @@
         padding: 0;
         margin:0;
         overflow-y: visible;
+        overflow-x: hidden;
     }
     @font-face{
         font-family: miriamBold;
@@ -111,9 +112,10 @@
     .wrapper{
         width: 100%;
         margin: 0 auto;
-        min-height: 100vh;
+        min-height: 110vh;
         font-family:miriamRegular;
         background-color: #d0f2bd;
+        padding-bottom: 2.5%;
     }
     .bottomLinks{
         font-size:20px;
@@ -258,6 +260,9 @@
     
     
     }
+    .card img{
+        width:80%;
+    }
     .CarouselDiv{
         width:80%;
         margin:0 auto;
@@ -289,11 +294,36 @@
         
     }
     .ReelPages .card{
-        height: 80vh;
+        height: 100%;
+        
     
     }
     .carousel-root{
         width:90%;
         margin: 1% auto;
+    }
+    .rec-item-wrapper .card img{
+        margin-top: 10%;
+        border:groove 5px #d0f2bd;
+    }
+    .ReelPages{
+        width: 85%;
+        margin:0 auto;
+    }
+    .productWrapper{
+        width: 100%;
+        margin: 0 auto;
+        min-height: calc(100vh - 75px);
+        font-family:miriamRegular;
+        display: flex;
+        background-color: #d0f2bd;
+        align-items: center;
+    }
+    .sc-bdfBwQ{
+        height: 25px;
+        min-width:20px;
+        text-align: center;
+        line-height:25px;
+        font-size: 100%;
     }
     }

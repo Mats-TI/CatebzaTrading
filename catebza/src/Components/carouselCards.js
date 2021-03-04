@@ -5,7 +5,6 @@ import "./style.css" ;
 import "./styleIpad.css"; 
 import "./styleMobile.css";
 // eslint-disable-next-line no-unused-vars
-import img1 from "./Media/RandomImages/images.jpg"
 
 class Cards extends React.Component{
     constructor(){

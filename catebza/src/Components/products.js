@@ -2,7 +2,11 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import "./style.css" ; import "./styleIpad.css"; import "./styleMobile.css";
-import img1 from "./Media/RandomImages/index1.jpg";
+import bananas from "./Media/productImgs/banana_2.jpg";
+import dyes from "./Media/productImgs/dye_4.jpg";
+import atchaars from "./Media/productImgs/Atchaar_4.jpg";
+import spice from "./Media/productImgs/spice_4.jpg"
+
 import {Link} from "react-router-dom";
 
 class Products extends React.Component{
@@ -11,12 +15,13 @@ class Products extends React.Component{
 
             <div className="productSection" id="productSection">
                 <h1 className="productsHeading">Our Products</h1>
+                <h4>Click one to expand Gallery</h4>
                 <section className="productsDiv">
                     <div className="bananaSection" >
                         
                             <div className="banana-front">
                             <Link to="/products/bananas">
-                            <img src={img1}></img>
+                            <img src={bananas}></img>
                             <div className="viewMore">
                             </div>
                             </Link>
@@ -28,7 +33,7 @@ class Products extends React.Component{
                         
                             <div className="atchaar-front">
                             <Link to="/products/Atchaar">
-                            <img src={img1}></img>
+                            <img src={atchaars}></img>
                             <div className="viewMore">
                             </div>
                             </Link>
@@ -40,7 +45,7 @@ class Products extends React.Component{
                     
                             <div className="atchaarDye-front">
                             <Link to="/products/AtchaarDye">
-                            <img src={img1}></img>
+                            <img src={dyes}></img>
                             <div className="viewMore">
                             </div>
                             </Link>
@@ -50,7 +55,7 @@ class Products extends React.Component{
                     <div className="spiceSection">
                             <div className="atchaarSpice-front">
                             <Link to="/products/AtchaarSpices">
-                            <img src={img1}></img>
+                            <img src={spice}></img>
                             <div className="viewMore">
                             </div>
                             </Link>

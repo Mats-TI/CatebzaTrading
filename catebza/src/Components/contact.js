@@ -1,28 +1,130 @@
 import React from 'react';
 import "./style.css" ; import "./styleIpad.css"; import "./styleMobile.css"
+import axios from "axios";
 
 class Contact extends React.Component{
     constructor(){
-        super()
+        super();
+        this.nameErrorRef=React.createRef();
         this.state={
-
+            name:"",
+            tel:"",
+            Email:"",
+            Subject:"",
+            errorName:'',
+            errorTel:'',
+            errorMail:'',
+            errorSubject:"",
+            sent:false
         }
     }
+    formValidation=()=>{
+            let isError=false;
+            const errors={
+                errorName:'',
+                errorTel:'',
+                errorMail:'',
+                errorSubject:"",
+            }
+            /*if (this.state.name.length===0){
+                isError=true;
+                errors.errorName="Name cannot be blank";
+            }*/
+            if (isNaN(this.state.tel)){
+                
+                isError=true;
+            
+                errors.errorTel="Contact number is either invalid or blank. Input should be numbers only. Example: '27123456789' instead of '+27 123456789' ";
+                alert(errors.errorTel);
+            }
+
+            /*if(this.state.Subject.length===0){
+                isError=true;
+                errors.errorSubject="Message cannot be blank";
+            }*/
+            this.setState({
+                ...this.state,
+                ...errors
+            })
+            return(isError);
+        
+        }
+        onChangeName=(event)=>{
+            this.setState({
+                name:event.target.value
+            });
+      
+        }
+        onChangeTel=(event)=>{
+            this.setState({
+                tel:event.target.value
+            })
+        }
+        onChangeMail=(event)=>{
+            this.setState({
+                Email:event.target.value
+            })
+        }
+        onChangeMsg=(event)=>{
+            this.setState({
+                Subject:event.target.value
+            })
+        }
+        dataHandler=(event)=>{
+            event.preventDefault();
+            const formErrors=this.formValidation();
+            if (!formErrors){
+                console.log("There are no form errors");
+                this.setState({
+                    name:"",
+                    tel:'',
+                    Email:'',
+                    Subject:'',
+                    errorMail:'',
+                    errorName:'',
+                    errorSubject:'',
+                    errorTel:"",
+                    
+                })
+            }
+            if (!formErrors){
+                let formData={
+                    Name:this.state.name,
+                    Tel:this.state.tel,
+                    Mail:this.state.Email,
+                    Message:this.state.Subject
+                }
+                axios.post("/contact/api/catebzaForm",formData)
+                .then((res)=>{
+                    
+                })
+                .catch((err)=>{
+                    console.log(`An error occured ${err}`)
+                });
+                this.setState({sent:true});
+                alert("Thank you for getting in touch. Your form has been submitted.")
+
+                
+            }
+        }
     render(){
         return(<div className="contactSection" id="contactSection">
             <h1>HAVE AN INQUIRY?</h1>
             <h2>DO GET IN TOUCH...</h2>
             <div className="contactDiv">
                 <div>
-                <form>
-                    <label id="nameLabel">Name*:</label><input id="nameInput" placeholder="Required"></input>
-                    <label id="telLabel">Tel*:</label><input id="telInput" placeholder="Required"></input>
-                    <label id="mailLabel">E-mail:</label><input id="mailInput"></input>
-                    <label id="msgLabel">Message*:</label><textarea id="msgInput" placeholder="Enter a message..."></textarea>
+                <form onSubmit={this.dataHandler.bind(this)}>
+                    {/* Redden the fields to highlight errors*/}
+                    <label id="nameLabel">Name*:</label><input required id="nameInput" placeholder="Required" value={this.state.name} onChange={this.onChangeName.bind(this)}></input>
+                    <label id="telLabel">Tel/Cell no*:</label><input required id="telInput" placeholder="Required" value={this.state.tel} onChange={this.onChangeTel.bind(this)}></input>
+                    <label id="mailLabel">E-mail:</label><input id="mailInput" value={this.state.Email} onChange={this.onChangeMail.bind(this)}></input>
+                    <label id="msgLabel">Message*:</label><textarea required id="msgInput" placeholder="Enter a message..." value={this.state.Subject} onChange={this.onChangeMsg.bind(this)}></textarea>
                     <br></br>
                     <button type="submit">Submit</button>
                 </form>
+    
                 </div>
+                
                 <div id="googleMapsSection">
                
                 {/* eslint-disable-next-line jsx-a11y/iframe-has-title*/}
@@ -30,7 +132,6 @@ class Contact extends React.Component{
                 {/* eslint-disable-next-line react/jsx-no-target-blank*/}
                 <a href="https://goo.gl/maps/vUv4r1p5TqbY8Uxq6" target="_blank">Open Map location</a>
                 </div>
-                
             </div>
         </div>)
     }

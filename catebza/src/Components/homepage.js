@@ -27,11 +27,19 @@ class HomePage extends React.Component{
             </section>
             <div ref={this.carouselRef} className="CarouselDiv">
             <Carousel >
-                <Cards name={Image.img1}/>
-                <Cards name={Image.img2}/>
-                <Cards name={Image.img3}/>
-                <Cards />
-                <Cards />
+                <Cards name={Image.ban4}/>
+                <Cards name={Image.ban7}/>
+                <Cards name={Image.dye2}/>
+                <Cards name={Image.dye1}/>
+                <Cards name={Image.ban6}/>
+                <Cards name={Image.spice2}/>
+                <Cards name={Image.atchaar3}/>
+                <Cards name={Image.spice1}/>
+                <Cards name={Image.atchaar4}/>
+                <Cards name={Image.spice3}/>
+
+                
+
             </Carousel>
         </div>
 

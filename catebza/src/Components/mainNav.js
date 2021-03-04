@@ -44,6 +44,8 @@ class MainNav extends React.Component{
                     <li><Link to="/" onClick={this.openSideNav}>Home</Link></li>
                     <li><Link to="/products" onClick={this.openSideNav}>Our Products</Link></li>
                     <li><Link to="/contact" onClick={this.openSideNav}>Contact Us</Link></li>
+                    <li className="phone-No">(+27) 072 334 4381</li>
+                    <li className="phone-No">(+27) 071 433 7806</li>
                 </ul>
             </div>
             <nav>
