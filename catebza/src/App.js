@@ -20,7 +20,7 @@ function App() {
       <ScrollToTop />
       <MainNav />
       <Switch>
-      <Route path="/" exact component={HomePage}></Route>
+      <Route path="/CatebzaTrading" exact component={HomePage}></Route>
       <Route path="/products" exact component={Products}></Route>
       <Route path="/products/bananas" exact component={BananaReel}></Route>
       <Route path="/products/atchaar" exact component={AtchaarGallery} />
