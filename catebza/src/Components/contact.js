@@ -94,7 +94,7 @@ class Contact extends React.Component{
                     Mail:this.state.Email,
                     Message:this.state.Subject
                 }
-                axios.post("/contact/api/catebzaForm",formData)
+                axios.post("https://catebza-server.herokuapp.com/contact/api/catebzaForm",formData)
                 .then((res)=>{
                     
                 })
