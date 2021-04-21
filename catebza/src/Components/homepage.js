@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-useless-constructor */
 import React from 'react';
-import catebzaLogo from "./Media/CatebzaLogo.png"
+import catebzaLogo from "./Media/CatebzaLogo2.jpg"
 import "./style.css" ; import "./styleIpad.css"; import "./styleMobile.css"
 import Cards from "./carouselCards"
 import Carousel from "react-elastic-carousel"
@@ -27,16 +27,15 @@ class HomePage extends React.Component{
             </section>
             <div ref={this.carouselRef} className="CarouselDiv">
             <Carousel >
-                <Cards name={Image.ban4}/>
                 <Cards name={Image.ban7}/>
                 <Cards name={Image.dye2}/>
                 <Cards name={Image.dye1}/>
                 <Cards name={Image.ban6}/>
-                <Cards name={Image.spice2}/>
-                <Cards name={Image.atchaar3}/>
+                <Cards name={Image.spices8}/>
+                <Cards name={Image.atchaar5}/>
                 <Cards name={Image.spice1}/>
-                <Cards name={Image.atchaar4}/>
-                <Cards name={Image.spice3}/>
+                <Cards name={Image.atchaar6}/>
+                <Cards name={Image.spices9}/>
 
                 
 

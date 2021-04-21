@@ -11,13 +11,13 @@ class Gallery extends React.Component{
     }
     render(){
         return(
-            <div className="productWrapper"> 
+            <div className="productWrapper">
+            <h2>Bananas</h2> 
             <div className="ReelPages">
                 <Carousel >
                     
-                    <Cards name={Images.ban2}/>
+                    
                     <Cards name={Images.ban3}/>
-                    <Cards name={Images.ban4}/>
                     <Cards name={Images.ban5}/>
                     <Cards name={Images.ban6}/>
                     <Cards name={Images.ban7}/>

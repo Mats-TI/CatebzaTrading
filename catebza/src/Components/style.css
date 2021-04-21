@@ -100,7 +100,7 @@ nav li{
 }
 
 .info img{
-    height: 38%;
+    width: 15%;
     margin-top: 30px;
     border: groove 10px #35EF2E;
     border-radius: 10px;
@@ -299,11 +299,12 @@ button{
 }
 .ReelPages{
     width: 85%;
-    margin:0 auto;
+    margin:auto auto;
 
 }
     .productWrapper{
         width: 100%;
+        flex-direction: column;
         margin: 0 auto;
         min-height: calc(100vh);
         font-family:miriamRegular;

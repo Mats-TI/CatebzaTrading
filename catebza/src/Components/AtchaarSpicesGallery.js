@@ -12,13 +12,13 @@ class SpicesGallery extends React.Component{
     render(){
         return(
             <div className="productWrapper">
+            <h2>Atchaar Spices</h2>
             <div className="ReelPages">
                 <Carousel>
-                    <Cards name={Images.spice4}/>
-                    <Cards name={Images.spice2}/>
-                    <Cards name={Images.spice1}/>
-                    <Cards name={Images.spice5}/>
-                    <Cards name={Images.spice3}/>
+                    <Cards name={Images.spices8}/>
+                    <Cards name={Images.spices9}/>
+                    <Cards name={Images.spices10}/>
+                    <Cards name={Images.spices6}/>
                 </Carousel>
             </div>
             </div>

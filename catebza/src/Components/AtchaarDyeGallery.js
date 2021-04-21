@@ -12,12 +12,16 @@ class Gallery extends React.Component{
     render(){
         return(
             <div className="productWrapper">
+            <h2>Atchaar Dye</h2>
             <div className="ReelPages">
                 <Carousel>
-                    <Cards name={Images.dye4}/>
+                    
                     <Cards name={Images.dye2}/>
                     <Cards name={Images.dye3}/>
+                    <Cards name={Images.dye5}/>
                     <Cards name={Images.dye1}/>
+                    <Cards name={Images.dye6}/>
+                    <Cards name={Images.dye7}/>
                 </Carousel>
             </div>
             </div>

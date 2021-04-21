@@ -2,10 +2,10 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import "./style.css" ; import "./styleIpad.css"; import "./styleMobile.css";
-import bananas from "./Media/productImgs/banana_2.jpg";
+import bananas from "./Media/productImgs/banana_7.jpg";
 import dyes from "./Media/productImgs/dye_4.jpg";
 import atchaars from "./Media/productImgs/Atchaar_4.jpg";
-import spice from "./Media/productImgs/spice_4.jpg"
+import spice from "./Media/productImgs/spice_8.jpg"
 
 import {Link} from "react-router-dom";
 

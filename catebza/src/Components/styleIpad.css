@@ -308,7 +308,7 @@
     }
     .ReelPages{
         width: 85%;
-        margin:0 auto;
+        margin:auto auto;
     }
     .productWrapper{
         width: 100%;
@@ -316,6 +316,7 @@
         min-height: calc(100vh - 75px);
         font-family:miriamRegular;
         display: flex;
+        flex-direction: column;
         background-color: #d0f2bd;
         align-items: center;
     }

@@ -12,12 +12,14 @@ class AtchaarGallery extends React.Component{
     render(){
         return(
             <div className="productWrapper">
+            <h2>Atchaar</h2>
             <div className="ReelPages">
                 <Carousel>
                     <Cards name={Images.atchaar2}/>
                     <Cards name={Images.atchaar1}/>
+                    <Cards name={Images.atchaar5}/>
                     <Cards name={Images.atchaar4}/>
-                    <Cards name={Images.atchaar3}/>
+                    <Cards name={Images.atchaar6}/>
                 </Carousel>
             </div>
             </div>

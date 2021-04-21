@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import "./style.css" ; import "./styleIpad.css"; import "./styleMobile.css";
-import logo from "./Media/iconfinder_Fruits_-_Color-06_4619636.png";
+import logo from "./Media/envio-72.jpg";
 import phoneIcon from "./Media/iconfinder__59ui_2303164.png";
 import {Link} from "react-router-dom"
 import mobileMenuIcon from "./Media/HamburgerMenuIcon.png";
