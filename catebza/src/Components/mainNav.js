@@ -41,7 +41,7 @@ class MainNav extends React.Component{
         <div className="mainNavParentDiv">
             <div className="mobileSideNav" ref={this.sideBarRef}>
                 <ul className="sideMenu">
-                    <li><Link to="/CatebzaTrading" onClick={this.openSideNav}>Home</Link></li>
+                    <li><Link to="/" onClick={this.openSideNav}>Home</Link></li>
                     <li><Link to="/products" onClick={this.openSideNav}>Our Products</Link></li>
                     <li><Link to="/contact" onClick={this.openSideNav}>Contact Us</Link></li>
                     <li className="phone-No">(+27) 072 334 4381</li>
@@ -50,9 +50,9 @@ class MainNav extends React.Component{
             </div>
             <nav>
                 <img className="mobileMenu" src={mobileMenuIcon} alt="menu" ref={this.hamburgerRef} onClick={this.openSideNav}></img>
-                <div className="mainLogo" title="Main"><Link to="/CatebzaTrading"><p>CATEBZA TRADING</p><img src={logo} alt="logo"></img></Link></div>
+                <div className="mainLogo" title="Main"><Link to="/"><p>CATEBZA TRADING</p><img src={logo} alt="logo"></img></Link></div>
                 <ul>
-                    <li><Link to="/CatebzaTrading">Home</Link></li>
+                    <li><Link to="/">Home</Link></li>
                     <li><Link to="/products">Our Products</Link></li>
                     <li><Link to="/contact">Contact Us</Link></li>
                 </ul>
