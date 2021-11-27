@@ -19,7 +19,7 @@ nav{
     display: flex;
     min-width: 100vh;
     flex-wrap: wrap;
-    background-color: #35EF2E;
+    background-color:rgba(88, 230, 21, .15);
     font-family:miriamBold ;
     height: 100px;
     justify-content: space-between;
@@ -50,12 +50,12 @@ nav li{
 }
 
 .mainLogo{
-    height: 100px;
+    height: calc(100px - 2%);
+    width: 250px;
     font-size:30px;
-    margin-top: 0%;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    margin-left: 5%;
+    margin-top: 1%;
+    margin-left: 3%;
+    border-radius:15px;
 }nav a{
     color: black;
 }
@@ -92,11 +92,13 @@ nav li{
 .contactDetails .p2{
     grid-area: number2
 }
-.info{
-    width: 80%;
+.landingPage{
+    width: 100%;
     margin: 0 auto;
-    height: 35%;
+    height: 100vh;
     overflow: hidden;
+    background-image: url("./Media/Landing\ Page\ image.png");
+    background-size: cover;
 }
 
 .info img{

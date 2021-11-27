@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-useless-constructor */
 import React from 'react';
-import catebzaLogo from "./Media/CatebzaLogo2.jpg"
 import "./style.css" ; import "./styleIpad.css"; import "./styleMobile.css"
 import Cards from "./carouselCards"
 import Carousel from "react-elastic-carousel"
@@ -21,9 +20,8 @@ class HomePage extends React.Component{
         return(
         <div className="wrapper" id="wrapper">
             
-            <section className="info">
-                <img src={catebzaLogo} alt="logo"/>
-                <h2>Your Ideal stop for a range of fruit produce,atchaar, atchaar spices and dye! Available for both wholesale and retail orders.</h2>
+            <section className="landingPage">
+                
             </section>
             <div ref={this.carouselRef} className="CarouselDiv">
             <Carousel >
