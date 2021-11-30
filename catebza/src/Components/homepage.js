@@ -3,9 +3,10 @@
 import React from 'react';
 import "./style.css" ; import "./styleIpad.css"; import "./styleMobile.css"
 import Cards from "./carouselCards"
-import Carousel from "react-elastic-carousel"
+import {Carousel} from "react-responsive-carousel"
 import Image from "./imgDatabase"
 import {Link} from "react-router-dom"
+import logo from "./Media/CatebzaTrading.png";
 
 
 
@@ -21,28 +22,22 @@ class HomePage extends React.Component{
         <div className="wrapper" id="wrapper">
             
             <section className="landingPage">
-                
+                <Link to="/"><img src={logo} className="mainLogo" alt="logo"></img></Link>
+                <h1 className="welcomeInfo"> Welcome to your ideal stop for a range of fruit produce, atchaar, atchaar spices and dye!</h1>
+                <h2>Available for both wholesale and retail orders.</h2>
             </section>
-            <div ref={this.carouselRef} className="CarouselDiv">
-            <Carousel >
-                <Cards name={Image.ban7}/>
-                <Cards name={Image.dye2}/>
-                <Cards name={Image.dye1}/>
-                <Cards name={Image.ban6}/>
-                <Cards name={Image.spices8}/>
-                <Cards name={Image.atchaar5}/>
-                <Cards name={Image.spice1}/>
-                <Cards name={Image.atchaar6}/>
-                <Cards name={Image.spices9}/>
-
-                
-
+            <div ref={this.carouselRef} id="mainGallery">
+            <Carousel showThumbs="false">
+                <section>
+                    <img src={Image.ban1} />
+                    <p className="legend">Bananas</p>
+                </section>
+                <section>
+                    <img src={Image.ban3} />
+                </section>
             </Carousel>
-        </div>
-
-            <p className="bottomLinks"><Link to="/products/Atchaar" style={{color:"black"}} title="View Atchaar">Atchaar</Link> | <Link to="/products/AtchaarSpices" style={{color:"black"}} title="View Atchaar Spices">Spices</Link> | <Link to="/products/AtchaarDye" style={{color:"black"}} title="View Atchaar Dye">Dye</Link> | <Link to="/products/bananas" style={{color:"black"}} title="View Bananas">Bananas</Link></p>
-    
-        </div>
+            </div>
+            </div>
         )
     }
     

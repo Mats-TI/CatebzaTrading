@@ -12,17 +12,21 @@
     font-family: miriamRegular;
     src:url("./Miriam_Libre/MiriamLibre-Regular.ttf");
 }
+@font-face{
+    font-family:luckiest_Guy;
+    src:url("./Luckiest_Guy/LuckiestGuy-Regular.ttf")
+}
 h1{
     font-family: miriamBold;
 }
 nav{
     display: flex;
-    min-width: 100vh;
+    min-width: 100%;
     flex-wrap: wrap;
-    background-color:rgba(88, 230, 21, .15);
     font-family:miriamBold ;
     height: 100px;
     justify-content: space-between;
+    position: fixed;
     
 }
 .mainNavParentDiv{
@@ -36,38 +40,72 @@ nav{
 nav ul{
     height: 100px;
     margin-top: 0;
-    margin:0 auto;
+    justify-content: space-between;
+    display: flex;
+    margin-right: 50px;
     
+}
+nav img{
+    display: none;
 }
 nav li{
     display: inline-block;
     line-height: 100px;
     padding-left: 50px;
-    font-size:20px
+    font-size:20px;
 }
 .mobileMenu{
     display:none;
 }
+.landingPage{
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("./Media/Landing\ Page\ image.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;
+}
 
-.mainLogo{
-    height: calc(100px - 2%);
+.landingPage a,.landingPage img{
+    height:150px;
     width: 250px;
-    font-size:30px;
-    margin-top: 1%;
-    margin-left: 3%;
     border-radius:15px;
-}nav a{
+    margin-right: 100px;
+    margin-top: 30px;
+}
+.landingPage h1{
+    margin-right: 50px;
+    width:40%;
+    margin-top: 50px;
+    font-family: miriamBold;
+    font-size:30px;
+}
+.landingPage h2{
+    margin-right: 50px;
+    width:40%;
+    font-family: miriamBold;
+    font-size:25px;
+}
+#mainGallery section{
+    height: calc(100vh - 120px);
+    border: 1px solid green;
+    width: 98%;
+    margin: auto;
+}
+.thumbs-wrapper{
+    display: none;
+}
+nav a:hover{
+    border-bottom: 2px solid rgba(0,149,5,0.66);
+}
+nav a{
     color: black;
 }
-.mainLogo img{
-    margin:0 65%;
-    width:50px;
-    height:50px;
-}
-.mainLogo p{
-    height: 10px;
-    margin-top: 10px;
-}
+
 .contactDetails{
     font-size: 15px;
     margin-right: 5%;
@@ -92,14 +130,6 @@ nav li{
 .contactDetails .p2{
     grid-area: number2
 }
-.landingPage{
-    width: 100%;
-    margin: 0 auto;
-    height: 100vh;
-    overflow: hidden;
-    background-image: url("./Media/Landing\ Page\ image.png");
-    background-size: cover;
-}
 
 .info img{
     width: 15%;
@@ -117,7 +147,6 @@ nav li{
     margin: 0 auto;
     min-height: 110vh;
     font-family:miriamRegular;
-    background-color: #d0f2bd;
     padding-bottom: 2.5%;
 }
 .bottomLinks{
@@ -182,7 +211,7 @@ form{
     grid-gap:15%;
 }
 input,textarea{
-    border: groove 3px #35EF2E;
+    border:3px groove #35EF2E;
     width:75%;
     font-weight:bold;
 }
@@ -244,23 +273,6 @@ button{
     margin: 0 auto;
 }
 
-.card{
-    
-    height: 100%;
-    width:100%;
-    align-items: center;
-    margin: 0 auto;
-    color:white;
-
-
-}
-.card img{
-    width:50%;
-}
-.CarouselDiv{
-    width:80%;
-    margin:0 auto;
-}
 .banana-front,.atchaar-front,.atchaarDye-front,.atchaarSpice-front{
     position: relative;
     width:220px;
@@ -290,10 +302,6 @@ button{
 .ReelPages .card{
     height: 100%;
 
-}
-.carousel-root{
-    width:90%;
-    margin: 1% auto;
 }
 .rec-item-wrapper .card img{
     margin-top: 10%;

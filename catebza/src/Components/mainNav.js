@@ -51,9 +51,11 @@ class MainNav extends React.Component{
                 <img className="mobileMenu" src={mobileMenuIcon} alt="menu" ref={this.hamburgerRef} onClick={this.openSideNav}></img>
                 <Link to="/"><img src={logo} className="mainLogo" alt="logo"></img></Link>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/products">Our Products</Link></li>
-                    <li><Link to="/contact">Contact Us</Link></li>
+                    <li><Link to="/" style={{textDecoration:"none"}}>Home</Link></li>
+                    <li><Link to="/products" style={{textDecoration:"none"}}>Our Products</Link></li>
+                    <li><Link to="/#mainGallery" style={{textDecoration:'none'}}>Gallery</Link></li>
+                    <li><Link to="/contact" style={{textDecoration:"none"}}>Contact Us</Link></li>
+                    
                 </ul>
             </nav>
             
