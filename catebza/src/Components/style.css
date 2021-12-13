@@ -29,6 +29,11 @@ nav{
     position: fixed;
     
 }
+nav.active{
+    background-color: white;
+    height: 70px;
+}
+
 .mainNavParentDiv{
     position: sticky;
     top:0;
@@ -45,8 +50,16 @@ nav ul{
     margin-right: 50px;
     
 }
-nav img{
-    display: none;
+.mainLogoAnchor-active{
+    height: 70px;
+    margin-left: 25px;
+}
+.mainLogoAnchor-inactive{
+    visibility: hidden;
+}
+.mainLogo{
+    height: 100%;
+
 }
 nav li{
     display: inline-block;

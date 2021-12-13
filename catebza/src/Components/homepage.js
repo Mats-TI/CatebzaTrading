@@ -22,7 +22,7 @@ class HomePage extends React.Component{
         <div className="wrapper" id="wrapper">
             
             <section className="landingPage">
-                <Link to="/"><img src={logo} className="mainLogo" alt="logo"></img></Link>
+                <img src={logo} className="mainLogo" alt="logo"></img>
                 <h1 className="welcomeInfo"> Welcome to your ideal stop for a range of fruit produce, atchaar, atchaar spices and dye!</h1>
                 <h2>Available for both wholesale and retail orders.</h2>
             </section>

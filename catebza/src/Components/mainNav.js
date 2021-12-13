@@ -11,9 +11,26 @@ class MainNav extends React.Component{
         this.sideBarRef=React.createRef();
         this.hamburgerRef=React.createRef();
         this.state={
-            toggleSideNav:true
+            toggleSideNav:true,
+            scrolledNav:false
         }
     }
+    changeNavColour=()=>{
+        if(window.scrollY > 50){
+            this.setState({
+            scrolledNav:true
+            })
+        }
+        else{
+            this.setState({
+            scrolledNav:false
+        })
+        }  
+    };
+    componentDidMount=()=>{
+        window.addEventListener("scroll",this.changeNavColour)
+    }
+    
     openSideNav=()=>{
         
         if (this.state.toggleSideNav===true){
@@ -34,7 +51,6 @@ class MainNav extends React.Component{
         }
 
     }
-
     render(){
         return(
         <div className="mainNavParentDiv">
@@ -47,13 +63,13 @@ class MainNav extends React.Component{
                     <li className="phone-No">(+27) 071 433 7806</li>
                 </ul>
             </div>
-            <nav>
+            <nav className={this.state.scrolledNav ? "active":""}>
                 <img className="mobileMenu" src={mobileMenuIcon} alt="menu" ref={this.hamburgerRef} onClick={this.openSideNav}></img>
-                <Link to="/"><img src={logo} className="mainLogo" alt="logo"></img></Link>
+                <a href="/" className={this.state.scrolledNav ? "mainLogoAnchor-active" : "mainLogoAnchor-inactive"}><img src={logo} className="mainLogo" alt="logo"></img></a>
                 <ul>
                     <li><Link to="/" style={{textDecoration:"none"}}>Home</Link></li>
                     <li><Link to="/products" style={{textDecoration:"none"}}>Our Products</Link></li>
-                    <li><Link to="/#mainGallery" style={{textDecoration:'none'}}>Gallery</Link></li>
+                    <li><a href="#mainGallery" style={{textDecoration:'none'}}>Gallery</a></li>
                     <li><Link to="/contact" style={{textDecoration:"none"}}>Contact Us</Link></li>
                     
                 </ul>
