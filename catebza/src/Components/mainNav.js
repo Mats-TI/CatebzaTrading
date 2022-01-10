@@ -4,6 +4,8 @@ import "./style.css" ; import "./styleIpad.css"; import "./styleMobile.css";
 import logo from "./Media/CatebzaTrading.png";
 import {Link} from "react-router-dom"
 import mobileMenuIcon from "./Media/HamburgerMenuIcon.png";
+import {HashLink} from 'react-router-hash-link'
+import Gallery from './mainGallery';
 
 class MainNav extends React.Component{
     constructor(){
@@ -69,7 +71,7 @@ class MainNav extends React.Component{
                 <ul>
                     <li><Link to="/" style={{textDecoration:"none"}}>Home</Link></li>
                     <li><Link to="/products" style={{textDecoration:"none"}}>Our Products</Link></li>
-                    <li><a href="#mainGallery" style={{textDecoration:'none'}}>Gallery</a></li>
+                    <li><HashLink to="/#MainGallery" style={{textDecoration:"none"}}>Gallery</HashLink></li>
                     <li><Link to="/contact" style={{textDecoration:"none"}}>Contact Us</Link></li>
                     
                 </ul>

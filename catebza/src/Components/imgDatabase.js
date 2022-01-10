@@ -14,6 +14,7 @@ import atchaar3 from "./Media/productImgs/Atchaar_3.jpg"
 import atchaar4 from "./Media/productImgs/Atchaar_4.jpg"
 import atchaar5 from "./Media/productImgs/atchaar_5.jpg"
 import atchaar6 from "./Media/productImgs/atchaar_6.jpg"
+import atchaar7 from "./Media/productImgs/Atchaar_7.jpg"
 import spices1 from "./Media/productImgs/spice_1.jpg"
 import spices2 from "./Media/productImgs/spice_2.jpg"
 import spices3 from "./Media/productImgs/spice_3.jpg"
@@ -57,6 +58,7 @@ const Image={
     atchaar4:atchaar4,
     atchaar5:atchaar5,
     atchaar6:atchaar6,
+    atchaar7:atchaar7,
 
     spice1:spices1,
     spice2:spices2,
