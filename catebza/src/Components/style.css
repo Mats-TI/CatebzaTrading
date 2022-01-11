@@ -1,4 +1,4 @@
-@media only screen and (min-width:1266px){
+@media only screen and (min-width:1000px){
 #root{
     padding: 0;
     margin:0;
@@ -19,12 +19,14 @@
 h1{
     font-family: miriamBold;
 }
+/*Navigation */
+
 nav{
     display: flex;
     min-width: 100%;
     flex-wrap: wrap;
     font-family:miriamBold ;
-    height: 100px;
+    height: 70px;
     justify-content: space-between;
     position: fixed;
     
@@ -43,7 +45,7 @@ nav.active{
     display: none;
 }
 nav ul{
-    height: 100px;
+    height: 70px;
     margin-top: 0;
     justify-content: space-between;
     display: flex;
@@ -56,6 +58,7 @@ nav ul{
 }
 .mainLogoAnchor-inactive{
     visibility: hidden;
+    height:70px;
 }
 .mainLogo{
     height: 100%;
@@ -63,31 +66,35 @@ nav ul{
 }
 nav li{
     display: inline-block;
-    line-height: 100px;
+    line-height: 70px;
     padding-left: 50px;
-    font-size:20px;
+    font-size:1.5vw;
 }
 .mobileMenu{
     display:none;
 }
+
+/*Wrapper */
+
 .landingPage{
     width: 100%;
     margin: 0 auto;
     height: 100vh;
     overflow: hidden;
     background-image: url("./Media/Landing\ Page\ image.png");
-    background-size: cover;
+    background-size: contain;
     display: flex;
+    background-repeat: no-repeat;
     flex-direction: column;
     justify-content: center;
     align-items:flex-end;
 }
 
 .landingPage a,.landingPage img{
-    height:150px;
-    width: 250px;
+    height:20%;
+    width: 20%;
     border-radius:15px;
-    margin-right: 100px;
+    margin-right: 5%;
     margin-top: 30px;
 }
 .landingPage h1{
@@ -95,13 +102,13 @@ nav li{
     width:40%;
     margin-top: 50px;
     font-family: miriamBold;
-    font-size:30px;
+    font-size:2.5vw;
 }
 .landingPage h2{
     margin-right: 50px;
     width:40%;
     font-family: miriamBold;
-    font-size:25px;
+    font-size:2vw;
 }
 
 .thumbs-wrapper{
@@ -116,7 +123,7 @@ nav a{
 #MainGallery{
     height: calc(100vh - 120px);
     border:5px solid green;
-    width:99%;
+    width:95%;
     margin:auto;
     border-radius: 15px;
 }
@@ -140,42 +147,15 @@ nav a{
         "icon number1"
         ". number2";
     padding-top: 1px;
-    
-}.phoneIcon{
-    width:40px;
-    height: 35px;
-    grid-area: icon;
-}
-.contactDetails .p1{
-    grid-area:number1;
-}
-.contactDetails .p2{
-    grid-area: number2
-}
-
-.info img{
-    width: 15%;
-    margin-top: 30px;
-    border: groove 10px #35EF2E;
-    border-radius: 10px;
-}
-.info h2{
-    height: 100%;
-    margin-bottom: 2%;
-    white-space:pre-line;
 }
 .wrapper{
     width: 100%;
     margin: 0 auto;
-    min-height: 110vh;
+    min-height: 100vh;
     font-family:miriamRegular;
     padding-bottom: 2.5%;
 }
-.bottomLinks{
-    font-size:20px;
-    height: 5%;
-    margin-top: 4%;
-}
+/* Products Page */
 
 .productsDiv{
     display:grid;

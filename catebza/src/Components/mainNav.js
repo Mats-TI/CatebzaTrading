@@ -5,7 +5,6 @@ import logo from "./Media/CatebzaTrading.png";
 import {Link} from "react-router-dom"
 import mobileMenuIcon from "./Media/HamburgerMenuIcon.png";
 import {HashLink} from 'react-router-hash-link'
-import Gallery from './mainGallery';
 
 class MainNav extends React.Component{
     constructor(){
@@ -18,7 +17,7 @@ class MainNav extends React.Component{
         }
     }
     changeNavColour=()=>{
-        if(window.scrollY > 50){
+        if(window.scrollY > 25){
             this.setState({
             scrolledNav:true
             })
@@ -58,9 +57,9 @@ class MainNav extends React.Component{
         <div className="mainNavParentDiv">
             <div className="mobileSideNav" ref={this.sideBarRef}>
                 <ul className="sideMenu">
-                    <li><Link to="/" onClick={this.openSideNav}>Home</Link></li>
-                    <li><Link to="/products" onClick={this.openSideNav}>Our Products</Link></li>
-                    <li><Link to="/contact" onClick={this.openSideNav}>Contact Us</Link></li>
+                    <li><Link to="/" onClick={this.openSideNav} style={{textDecoration:"none"}}>Home</Link></li>
+                    <li><Link to="/products" onClick={this.openSideNav} style={{textDecoration:"none"}} >Our Products</Link></li>
+                    <li><Link to="/contact" onClick={this.openSideNav} style={{textDecoration:"none"}}>Contact Us</Link></li>
                     <li className="phone-No">(+27) 072 334 4381</li>
                     <li className="phone-No">(+27) 071 433 7806</li>
                 </ul>
@@ -69,9 +68,9 @@ class MainNav extends React.Component{
                 <img className="mobileMenu" src={mobileMenuIcon} alt="menu" ref={this.hamburgerRef} onClick={this.openSideNav}></img>
                 <a href="/" className={this.state.scrolledNav ? "mainLogoAnchor-active" : "mainLogoAnchor-inactive"}><img src={logo} className="mainLogo" alt="logo"></img></a>
                 <ul>
-                    <li><Link to="/" style={{textDecoration:"none"}}>Home</Link></li>
+                    <li><a href="/" style={{textDecoration:"none"}}>Home</a></li>
                     <li><Link to="/products" style={{textDecoration:"none"}}>Our Products</Link></li>
-                    <li><HashLink to="/#MainGallery" style={{textDecoration:"none"}}>Gallery</HashLink></li>
+                    <li><HashLink smooth to="/#MainGallery" style={{textDecoration:"none"}}>Gallery</HashLink></li>
                     <li><Link to="/contact" style={{textDecoration:"none"}}>Contact Us</Link></li>
                     
                 </ul>

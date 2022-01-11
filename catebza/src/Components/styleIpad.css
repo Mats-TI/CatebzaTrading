@@ -1,4 +1,4 @@
-@media only screen and (min-width:768px) and (max-width:1265px){
+@media only screen and (min-width:768px) and (max-width:1000px){
     #root{
         padding: 0;
         margin:0;
@@ -16,19 +16,19 @@
     h1{
         font-family: miriamBold;
     }
-
+    /*Navigation bar*/
     nav{
         display: flex;
-        min-width: 100vh;
+        min-width: 100vw;
         flex-wrap: wrap;
-        background-color: #35EF2E;
+        background-color: transparent;
         font-family:miriamBold ;
-        height: 100px;
+        height: 50px;
         
         
     }
     .mainNavParentDiv{
-        position: sticky;
+        position: fixed;
         top:0;
         z-index: 1000;
     }
@@ -39,89 +39,99 @@
         display:none;
     }
     nav ul{
-        height: 100px;
-        margin: 0 auto;
+        height: 50px;
+        margin-left:auto;
+        margin-right: 5vw;
     }
     nav li{
         display: inline-block;
-        line-height: 100px;
+        line-height: 50px;
         padding-left: 25px;
         font-size:15px
     }
-    
+    .mainLogoAnchor-active{
+        height: 50px;
+        margin-left: 25px;
+    }
+    .mainLogoAnchor-inactive{
+        visibility: hidden;
+        height: 50px;
+        
+    }
     .mainLogo{
-        height: 100px;
-        font-size:20px;
-        padding-top: 5px;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        margin-left: 5%;
-    }nav a{
+        height: 100%;
+    
+    }
+    nav a{
         color: black;
     }
-    .mainLogo img{
-        margin:0 65%;
-        width:50px;
-        height:50px;
-    }
-    .mainLogo p{
-        height: 10px;
-        margin-top: 10px;
-    }
-    .contactDetails{
-        font-size: 12px;
-        margin-right: 5%;
-        display: grid;
-        grid-template-columns: 50px calc(100%-50px);
-        grid-template-rows: 1fr 1fr;
-        margin-left:auto;
-        grid-template-areas:
-            "icon number1"
-            ". number2";
-        padding-top: 15px;
-           
-    }.phoneIcon{
-        width:25px;
-        height: 35px;
-        grid-area: icon;
-    }
-    .contactDetails .p1{
-        grid-area:number1;
-    }
-    .contactDetails .p2{
-        grid-area: number2
-    }
-    .info{
-        width: 80%;
-        margin: 0 auto;
-        height: 35%;
-        overflow: hidden;
-    }
-    
-    .info img{
-        height: 50px;
-        margin-top: 30px;
-        border: groove 10px #35EF2E;
-        border-radius: 10px;
-    }
-    .info h2{
-        height: 100%;
-        white-space:pre-line;
-        font-size:20px;
+    nav.active{
+        background-color: white;
+        height: 70px;
     }
     .wrapper{
         width: 100%;
         margin: 0 auto;
-        min-height: 110vh;
+        min-height: 100vh;
         font-family:miriamRegular;
-        background-color: #d0f2bd;
         padding-bottom: 2.5%;
     }
-    .bottomLinks{
-        font-size:20px;
-        height: 5%;
-        margin-top: 4%;
+    .landingPage{
+        width: 100%;
+        margin: 0 auto;
+        height: 100vh;
+        overflow: hidden;
+        background-image: url("./Media/Landing\ Page\ image.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-end;
     }
+    
+    .landingPage img{
+        height:20%;
+        width: 20%;
+        border-radius:15px;
+        margin-right: 5%;
+        margin-top: 0px;
+    }
+    .landingPage h1{
+        margin-right: 50px;
+        width:40%;
+        margin-top: 50px;
+        font-family: miriamBold;
+        font-size:2.5vw;
+    }
+    .landingPage h2{
+        margin-right: 50px;
+        width:40%;
+        font-family: miriamBold;
+        font-size:2vw;
+    }
+    
+    .thumbs-wrapper{
+        display: none;
+    }
+    nav a:hover{
+        border-bottom: 2px solid rgba(0,149,5,0.66);
+    }
+    #MainGallery{
+        height: calc(100vh - 120px);
+        border:5px solid green;
+        width:95%;
+        margin:auto;
+        border-radius: 15px;
+    }
+    #MainGallery img{
+        height: calc(100vh - 120px);
+        width: 100%;
+    }
+    #MainGallery section{
+        border-radius: 15px;
+    }
+    
     .productsDiv{
         display:grid;
         width:80%;
@@ -297,10 +307,6 @@
         height: 100%;
         
     
-    }
-    .carousel-root{
-        width:90%;
-        margin: 1% auto;
     }
     .rec-item-wrapper .card img{
         margin-top: 10%;

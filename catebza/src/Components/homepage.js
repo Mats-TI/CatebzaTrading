@@ -2,8 +2,6 @@
 /* eslint-disable no-useless-constructor */
 import React from 'react';
 import "./style.css" ; import "./styleIpad.css"; import "./styleMobile.css"
-import {Carousel} from "react-responsive-carousel"
-import Image from "./imgDatabase"
 import logo from "./Media/CatebzaTrading.png";
 import Gallery from "./mainGallery"
 

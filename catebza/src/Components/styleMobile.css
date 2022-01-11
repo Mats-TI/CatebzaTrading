@@ -17,20 +17,18 @@
     }
     nav{
         display: flex;
-        min-width: 100vh;
+        min-width: 100vw;
         flex-wrap: wrap;
         background-color: #35EF2E;
         font-family:miriamBold ;
-        height: 75px;
+        height: 50px;
         
     }
     .mainNavParentDiv{
         position: fixed;
-    
         z-index: 1000;
     }
     nav ul{
-        height: 100px;
         display: none;   
         
     }
@@ -49,11 +47,7 @@
     
     .mainLogo{
         height: 50px;
-        font-size:30px;
-        margin-top: 0%;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        margin-left: 1.5%;
+        margin-left: auto;
     }nav a{
         color: black;
     }
@@ -73,11 +67,10 @@
         height:100vh;
         position: fixed;
         z-index: 10;
-        margin-top: 75px;
+        margin-top: 50px;
         visibility: hidden;
         font-family:miriamBold;
         cursor: pointer;
-        
         
     }
     .mobileSideNav a{
@@ -89,50 +82,20 @@
         text-align:left;
         margin:25px 10px;
     }
-    .phone-No{
-        font-size: 80%;
+    .landingPage img{
+        display: none;
     }
-    .contactDetails{
-        font-size: 10px;
-        margin-left: auto;
-        grid-template-columns: 50px calc(100%-50px);
-        grid-template-rows: 1fr 1fr;
-    
-        grid-template-areas:
-            "icon number1"
-            ". number2";
-        padding-top: 1px;
-        display:none;
-
-    }.phoneIcon{
-        width:40px;
-        height: 35px;
-        grid-area: icon;
+    .landingPage h1{
+        width:80%;
+        margin: 50px auto;
+        font-family: miriamBold;
+        font-size:3vh;
     }
-    .contactDetails .p1{
-        grid-area:number1;
-    }
-    .contactDetails .p2{
-        grid-area: number2
-    }
-    .info{
-        width: 80%;
-        margin: 0 auto;
-        height: 35%;
-        overflow: hidden;
-    }
-    
-    .info img{
-        height: 35px;
-        margin-top: 30px;
-        border: groove 10px #35EF2E;
-        border-radius: 10px;
-    }
-    .info h2{
-        height: 100%;
-        line-height: 1.5;
-        white-space:pre-line;
-        font-size: 15px;
+    .landingPage h2{
+        margin: 50px auto;
+        width:80%;
+        font-family: miriamBold;
+        font-size:2vh;
     }
     .wrapper{
         width: 100%;
@@ -143,10 +106,8 @@
         padding-bottom: 2.5%;
         background-color: #d0f2bd;
     }
-    .bottomLinks{
-        font-size:15px;
-        
-        margin-top: 0 auto;
+    .thumbs-wrapper{
+        display: none;
     }
     .productsHeading{
         font-size:20px;
