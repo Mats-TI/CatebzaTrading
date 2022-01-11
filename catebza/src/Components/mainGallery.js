@@ -7,7 +7,7 @@ class Gallery extends React.Component{
     render(){
         return(
             <div ref={this.carouselRef} id="MainGallery">
-            <Carousel showThumbs="false" infiniteLoop="true" autoPlay="true" interval={5000}>
+            <Carousel showThumbs="false" infiniteLoop="true" autoPlay="true" interval={5000} emulateTouch="true">
                 <section>
                     <img src={Image.ban7} alt="Gallery Img"/>
                     <p className="legend">Bananas, Full Crate</p>
