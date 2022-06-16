@@ -17,7 +17,9 @@ class HomePage extends React.Component{
 
         return(
         <div className="wrapper" id="wrapper">
+            <section className='mobileBanner'>
             
+            </section>
             <section className="landingPage">
                 <img src={logo} className="mainLogo" alt="logo"></img>
                 <h1 className="welcomeInfo"> Welcome to your ideal stop for a range of fruit produce, atchar, atchar spices and dye!</h1>

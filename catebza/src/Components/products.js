@@ -14,11 +14,10 @@ class Products extends React.Component{
         return(
 
             <div className="productSection" id="productSection">
-                <h1 className="productsHeading">Our Products</h1>
-                <h4>Click one to expand Gallery</h4>
+                <h1 className="productsHeading">Our Products...</h1>
+                <h3>Click one to expand Gallery</h3>
                 <section className="productsDiv">
                     <div className="bananaSection" >
-                        
                             <div className="banana-front">
                             <Link to="/products/bananas">
                             <img src={bananas}></img>

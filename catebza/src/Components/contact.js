@@ -109,7 +109,7 @@ class Contact extends React.Component{
         }
     render(){
         return(<div className="contactSection" id="contactSection">
-            <h1>HAVE AN INQUIRY?</h1>
+            <h1>Have an Inquiry?</h1>
             <h2>DO GET IN TOUCH...</h2>
             <div className="contactDiv">
                 <div>

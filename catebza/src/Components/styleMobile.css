@@ -90,9 +90,15 @@
     }
     .mobileSideNav li{
         display: block;
-        margin-top: 25px;
         text-align:left;
-        margin:25px 10px;
+        margin:25px auto;
+        font-size:10px;
+    }
+    .mobileBanner{
+        background-image: url('./Media/Landing\ Page\ image.png');
+        width: 99vw;
+        height: 35vh;
+        background-size: 100% 100%;
     }
     .landingPage img{
         display: none;
@@ -112,11 +118,11 @@
     .wrapper{
         width: 100%;
         margin: 0px auto;
-        padding-top: 75px;
+        padding-top: 50px;
         min-height: calc(100vh - 75px);
         font-family:miriamRegular;
         padding-bottom: 2.5%;
-        background-color: #d0f2bd;
+        background-color: white;
     }
     .thumbs-wrapper{
         display: none;
