@@ -82,7 +82,7 @@ nav li{
     height: 100vh;
     overflow: hidden;
     background-image: url("./Media/Landing\ Page\ image.png");
-    background-size: contain;
+    background-size: 100% 100%;
     display: flex;
     background-repeat: no-repeat;
     flex-direction: column;

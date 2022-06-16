@@ -82,7 +82,7 @@
         height: 100vh;
         overflow: hidden;
         background-image: url("./Media/Landing\ Page\ image.png");
-        background-size: contain;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
