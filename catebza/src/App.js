@@ -6,7 +6,6 @@ import Products from "./Components/products"
 import Contacts from "./Components/contact"
 import BananaReel from "./Components/BananaGallery"
 import {Switch, HashRouter as Router, Route} from "react-router-dom"
-//import Contact from './Components/contact';
 import ScrollToTop from "./Components/scrollToTop"
 import AtchaarGallery from './Components/AtchaarGallery';
 import AtchaarDyeGallery from "./Components/AtchaarDyeGallery";
