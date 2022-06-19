@@ -57,7 +57,7 @@ class MainNav extends React.Component{
         <div className="mainNavParentDiv">
             <div className="mobileSideNav" ref={this.sideBarRef}>
                 <ul className="sideMenu">
-                    <li><Link to="/CatebzaTrading" onClick={this.openSideNav} style={{textDecoration:"none"}}>Home</Link></li>
+                    <li><Link to="/" onClick={this.openSideNav} style={{textDecoration:"none"}}>Home</Link></li>
                     <li><Link to="/products" onClick={this.openSideNav} style={{textDecoration:"none"}} >Our Products</Link></li>
                     <li><Link to="/contact" onClick={this.openSideNav} style={{textDecoration:"none"}}>Contact Us</Link></li>
                     <li className="phone-No">(+27) 072 334 4381</li>
