@@ -201,7 +201,7 @@ h1{
     display: grid;
     grid-template-columns:1fr 1fr;
     width:80%;
-    margin: 5% auto;
+    margin: 0 auto;
     font-family:miriamBold
 }
 form{
@@ -232,7 +232,6 @@ label{
 }
 .contactSection{
     min-height:100vh;
-    margin: 0 auto;
     background-color: #d0f2bd;
 }
 #nameLabel{

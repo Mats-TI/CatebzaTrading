@@ -17,10 +17,11 @@ class MainNav extends React.Component{
         }
     }
     changeNavColour=()=>{
-        if(window.scrollY > 25){
+        if(window.scrollY >15){
             this.setState({
             scrolledNav:true
             })
+            console.log('scrolling')
         }
         else{
             this.setState({
