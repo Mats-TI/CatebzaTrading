@@ -21,7 +21,6 @@ class MainNav extends React.Component{
             this.setState({
             scrolledNav:true
             })
-            console.log('scrolling')
         }
         else{
             this.setState({
