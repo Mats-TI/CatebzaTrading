@@ -76,6 +76,9 @@
         font-family:miriamRegular;
         padding-bottom: 2.5%;
     }
+    .loadingMobileBanner, .mobileBanner{
+        display: none;
+    }
     .landingPage{
         width: 100%;
         margin: 0 auto;

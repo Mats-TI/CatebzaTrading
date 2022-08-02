@@ -55,7 +55,7 @@ class Gallery extends React.Component{
                     <p className='legend'>Atchar, ~50kg</p>
                 </section>
             </Carousel>
-            </div>) : (<h1>Lodading...</h1>))
+            </div>) : (<h1>Loading...</h1>))
     }
 }
 export default Gallery

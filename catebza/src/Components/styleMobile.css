@@ -94,8 +94,7 @@
         margin:25px auto;
         font-size:10px;
     }
-    .mobileBanner{
-        background-image: url('./Media/Landing\ Page\ image.png');
+    .mobileBanner img{
         width: 100vw;
         height: 35vh;
         background-size: 100% 100%;

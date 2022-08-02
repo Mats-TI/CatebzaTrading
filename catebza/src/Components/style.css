@@ -75,7 +75,9 @@ nav li{
 }
 
 /*Wrapper */
-
+.loadingMobileBanner, .mobileBanner{
+    display: none;
+}
 .landingPage{
     width: 100%;
     margin: 0 auto;
