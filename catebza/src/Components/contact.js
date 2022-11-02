@@ -114,7 +114,6 @@ class Contact extends React.Component{
             <div className="contactDiv">
                 <div>
                 <form onSubmit={this.dataHandler.bind(this)}>
-                    {/* Redden the fields to highlight errors*/}
                     <label id="nameLabel">Name*:</label><input required id="nameInput" placeholder="Required" value={this.state.name} onChange={this.onChangeName.bind(this)}></input>
                     <label id="telLabel">Tel/Cell no*:</label><input required id="telInput" placeholder="Required" value={this.state.tel} onChange={this.onChangeTel.bind(this)}></input>
                     <label id="mailLabel">E-mail:</label><input id="mailInput" value={this.state.Email} onChange={this.onChangeMail.bind(this)}></input>

@@ -14,53 +14,17 @@ class Products extends React.Component{
         return(
 
             <div className="productSection" id="productSection">
-                <h1 className="productsHeading">Our Products...</h1>
-                <h3>Click one to expand Gallery</h3>
+                <h1 className="productsHeading">What we have in store.</h1>
+                <h3 className='productSubheading1'>Browse through our selection of products...</h3>
                 <section className="productsDiv">
-                    <div className="bananaSection" >
-                            <div className="banana-front">
-                            <Link to="/products/bananas">
-                            <img src={bananas}></img>
-                            <div className="viewMore">
-                            </div>
-                            </Link>
-                            </div>                     
-                        <p>Bananas</p>
+                    <div className='products-gallery Banana'>
                     </div>
-
-                    <div className="atchaarSection">
-                        
-                            <div className="atchaar-front">
-                            <Link to="/products/Atchaar">
-                            <img src={atchaars}></img>
-                            <div className="viewMore">
-                            </div>
-                            </Link>
-                            </div>
-                        <p>Atchaar</p>
+                    <div className='products-gallery Atchaar'>
                     </div>
-                    
-                    <div className="dyeSection">
-                    
-                            <div className="atchaarDye-front">
-                            <Link to="/products/AtchaarDye">
-                            <img src={dyes}></img>
-                            <div className="viewMore">
-                            </div>
-                            </Link>
-                            </div>
-                        <p>Atchaar Dye</p>
+                    <div className='products-gallery Spices'>
                     </div>
-                    <div className="spiceSection">
-                            <div className="atchaarSpice-front">
-                            <Link to="/products/AtchaarSpices">
-                            <img src={spice}></img>
-                            <div className="viewMore">
-                            </div>
-                            </Link>
-                            </div>
-                        <p>Atchaar Spices</p>
-                    </div>
+                    <div className='products-gallery Dye'>
+                    </div>                    
                 </section>
             </div>
         )
