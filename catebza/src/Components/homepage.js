@@ -35,12 +35,7 @@ class HomePage extends React.Component{
                 <h2>Available for both wholesale and retail orders.</h2>
             </section>
             <Gallery />
-            </div>)
-            
-        
+            </div>) 
     }
-    
-
-    
 }
 export default HomePage
