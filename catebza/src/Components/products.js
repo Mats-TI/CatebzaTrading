@@ -15,7 +15,7 @@ class Products extends React.Component{
 
             <div className="productSection" id="productSection">
                 <h1 className="productsHeading">What we have in store.</h1>
-                <h3 className='productSubheading1'>Browse through our selection of products...</h3>
+                <h3 className='productSubheading1'>Browse through a selection of our products...</h3>
                 <section className="productsDiv">
                     <div className='products-gallery Banana'>
                         <p>Bananas</p>
