@@ -112,7 +112,6 @@ class Contact extends React.Component{
             <h1>Have an Inquiry?</h1>
             <h2>Do get in touch...</h2>
             <div className="contactDiv">
-                <div>
                 <form onSubmit={this.dataHandler.bind(this)}>
                     <label id="nameLabel">Name*:</label><input required id="nameInput" placeholder="Required" value={this.state.name} onChange={this.onChangeName.bind(this)}></input>
                     <label id="telLabel">Tel/Cell no*:</label><input required id="telInput" placeholder="Required" value={this.state.tel} onChange={this.onChangeTel.bind(this)}></input>
@@ -121,13 +120,10 @@ class Contact extends React.Component{
                     <br></br>
                     <button type="submit">Submit</button>
                 </form>
-    
-                </div>
-                
                 <div id="googleMapsSection">
                
                 {/* eslint-disable-next-line jsx-a11y/iframe-has-title*/}
-                <iframe src="https://www.google.com/maps/embed?pb=!4v1613142130144!6m8!1m7!1sIsHPdWRs4tjf7ywjsgyXeg!2m2!1d-24.31298052854167!2d29.47595904710375!3f255.5493691597444!4f-11.400019175762978!5f0.5970117501821992" width="100%" height="100%" frameborder="0" style={{border:"groove 5px green"}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1613142130144!6m8!1m7!1sIsHPdWRs4tjf7ywjsgyXeg!2m2!1d-24.31298052854167!2d29.47595904710375!3f255.5493691597444!4f-11.400019175762978!5f0.5970117501821992" width="100%" height="100%" frameborder="0" style={{border:"solid 5px green", borderRadius:'15px'}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 {/* eslint-disable-next-line react/jsx-no-target-blank*/}
                 <a href="https://goo.gl/maps/vUv4r1p5TqbY8Uxq6" target="_blank">Open Map location</a>
                 </div>

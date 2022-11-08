@@ -215,7 +215,7 @@ nav a{
     font-weight:bold
 
 }
-.productSubheading1{
+.productSubheading1, .contactSection h2{
     margin-top: 25px;
     margin-left: 75px;
 }
@@ -227,12 +227,12 @@ h1{
     display: grid;
     grid-template-columns:1fr 1fr;
     width:80%;
-    margin: 0 auto;
+    margin: 50px auto;
     font-family:miriamBold
 }
 form{
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 20% 70%;
     grid-template-areas:
         "nameLabel nameInput"
         "telLabel telInput"
@@ -242,9 +242,11 @@ form{
     grid-gap:15%;
 }
 input,textarea{
-    border:3px groove #35EF2E;
+    border:3px solid green;
+    border-radius:15px;
     width:75%;
     font-weight:bold;
+    justify-self:'start';
 }
 label{
     font-size:20px;
@@ -252,13 +254,14 @@ label{
 }
 #googleMapsSection{
     
-    width:60%;
+    width:80%;
     height: 100%;
     margin:auto auto;
 }
 .contactSection{
     min-height:100vh;
-    background-color: #d0f2bd;
+    padding-top: 150px;
+    background-color: white;
 }
 #nameLabel{
     grid-area:nameLabel
