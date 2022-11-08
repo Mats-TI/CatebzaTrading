@@ -5,29 +5,20 @@ import "./style.css" ; import "./styleIpad.css"; import "./styleMobile.css"
 import logo from "./Media/CatebzaTrading.png";
 import Gallery from "./mainGallery"
 import axios from 'axios';
+import MobileBanner from './Media/LandingPageImage.jpg'
 
 class HomePage extends React.Component{
     constructor(props){
         super(props)
         this.carouselRef=React.createRef();
-        this.state={
-            banner:null
-        }
     }
 
-    async componentDidMount(){
-        await axios('http://localhost:5001/api/bannerTest').then((res)=>{
-            this.setState({
-                banner:res.data[0]
-            })
-        })
-    }
     render(){
         return(
         <div className="wrapper" id="wrapper">
-            {this.state.banner ? (<section className='mobileBanner'>
-             <img src={this.state.banner} alt='Banner'></img>
-            </section>):<p className='loadingMobileBanner'>Loading Banner</p>}
+            <section className='mobileBanner'>
+             <img src={MobileBanner} alt='Banner'></img>
+            </section>
 
             <section className="landingPage">
                 <img src={logo} className="mainLogo" alt="logo"></img>

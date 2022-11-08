@@ -15,8 +15,6 @@ class Gallery extends React.Component{
         await axios.get('http://localhost:5001/api/testing').then((res)=>{
         res.data.forEach(element => {
             Images.push(element)
-            
-
         });
         })
         await this.setState({
