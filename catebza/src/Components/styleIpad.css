@@ -139,6 +139,7 @@
         flex-direction: row;
         padding-top: 75px;
         width: 100vw;
+        padding-bottom: 50px;
     }
     .products-gallery{
         background-color: #d9d9d9;

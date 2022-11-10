@@ -129,20 +129,48 @@
     .productsHeading{
         font-size:20px;
         padding-top:30px;
+        text-align: center;
         
     }
+    .productSubheading1, .contactSection h2{
+        text-align: center;
+        font-size: 15px;
+        width: 80%;
+        margin: 25px auto;
+    }
     .productsDiv{
-
+        display: flex;
+        flex-direction: column;
+        padding-top: 35px;
+        align-items: center;
+        padding-bottom: 50px;
     }
-
-    .productsDiv img{
-        width:150px;
-        height:150px;
-        border:solid 5px green;
-        border-radius:20px;
+    .products-gallery{
+        background-color: #d9d9d9;
+        width: 180px;
+        height: 250px;
+        margin-top:25px;
+        display: flex;
+        position:relative;
     }
+    .products-gallery p{
+        position: absolute;
+        bottom:0;
+        background-color: black;
+        color:white;
+        width: 100%;
+        margin:0;
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        
+    }
+    .products-gallery:hover{
+        box-shadow: 15px -15px 15px grey;
+        border: 5px solid rgba(0,149,5,0.66);
+    } 
+
     .productSection{
-        background-color: #d0f2bd;
         min-height: 100vh;
         padding-top: 75px;
         overflow-x:auto;
