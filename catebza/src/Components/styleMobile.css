@@ -132,30 +132,9 @@
         
     }
     .productsDiv{
-        display:grid;
-        width:80%;
-        margin: 5% auto;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-            "banana"
-            "atchaar"
-            "dye"
-            "spice";
-        font-family: miriamBold;
+
     }
-    .bananaSection{
-        grid-area:banana;
-        visibility:visible;
-    }
-    .atchaarSection{
-        grid-area:atchaar;
-    }
-    .dyeSection{
-        grid-area:dye;
-    }
-    .spiceSection{
-        grid-area:spice
-    }
+
     .productsDiv img{
         width:150px;
         height:150px;
@@ -212,7 +191,6 @@
     .contactSection{
         min-height:100vh;
         margin: 0 auto;
-        background-color: #d0f2bd;
         font-family: miriamBold;
         padding-top: 75px;
     }

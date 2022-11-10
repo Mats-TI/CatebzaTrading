@@ -172,8 +172,6 @@ nav a{
     margin-left: 75px;
     position:relative;
 }
-        
-}
 .products-gallery p{
     position:absolute;
     bottom:0;
@@ -350,6 +348,9 @@ button{
         background-color: #d0f2bd;
         align-items: center;
     }
+        
+}
+
 
 
 
