@@ -186,7 +186,7 @@
     .contactDiv{
         display: grid;
         grid-template-columns:1fr 1fr;
-        width:90%;
+        width: 100%;
         margin: 10% auto;
         font-family:miriamBold;
     }
@@ -200,11 +200,14 @@
             "msgLabel msgInput"
             "button button";
         grid-gap:10%;
+        margin-left: 50px;
     }
     input,textarea{
-        border: groove 3px #35EF2E;
+        border: solid 3px green;
         width:75%;
         font-weight:bold;
+        border-radius:15px;
+        justify-self: start;
     }
     label{
         font-size:15px;
@@ -219,6 +222,7 @@
     .contactSection{
         min-height:100vh;
         margin: 0 auto;
+        padding-top: 100px;
     }
     .contactSection h1{
         font-size:25px;
@@ -262,12 +266,6 @@
         color:white;
         cursor:pointer;
         border-radius: 10px;
-    }
-    
-    #aboutUs{
-        font-family:miriamBold;
-        width:80%;
-        margin: 0 auto;
     }
     
     .card{

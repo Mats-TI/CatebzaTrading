@@ -188,7 +188,8 @@
         font-family: miriamBold;
     }
     input,textarea{
-        border: groove 3px #35EF2E;
+        border: solid 3px green;
+        border-radius: 15px;
         width:70%;
         font-weight:bold;
         margin: 8px auto;
@@ -229,9 +230,11 @@
     .contactSection h1{
         font-size:20px;
         padding-top:30px;
+        text-align: center;
     }
     .contactSection h2{
         font-size:17px;
+        text-align: center;
     }
     
     #aboutUs{

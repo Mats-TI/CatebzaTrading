@@ -224,7 +224,7 @@ h1{
 .contactDiv{
     display: grid;
     grid-template-columns:1fr 1fr;
-    width:80%;
+    width:100%;
     margin: 50px auto;
     font-family:miriamBold
 }
@@ -238,6 +238,7 @@ form{
         "msgLabel msgInput"
         "button button";
     grid-gap:15%;
+    margin-left: 75px;
 }
 input,textarea{
     border:3px solid green;
