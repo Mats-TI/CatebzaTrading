@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/CatebzaTrading/static/css/main.e7f0dab0.chunk.css",
+    "main.css": "/CatebzaTrading/static/css/main.fae0e520.chunk.css",
     "main.js": "/CatebzaTrading/static/js/main.69632cbc.chunk.js",
     "main.js.map": "/CatebzaTrading/static/js/main.69632cbc.chunk.js.map",
     "runtime-main.js": "/CatebzaTrading/static/js/runtime-main.79936d8d.js",
@@ -12,7 +12,7 @@
     "static/js/3.aa44b52d.chunk.js.map": "/CatebzaTrading/static/js/3.aa44b52d.chunk.js.map",
     "index.html": "/CatebzaTrading/index.html",
     "static/css/2.55d8add8.chunk.css.map": "/CatebzaTrading/static/css/2.55d8add8.chunk.css.map",
-    "static/css/main.e7f0dab0.chunk.css.map": "/CatebzaTrading/static/css/main.e7f0dab0.chunk.css.map",
+    "static/css/main.fae0e520.chunk.css.map": "/CatebzaTrading/static/css/main.fae0e520.chunk.css.map",
     "static/js/2.73a8df87.chunk.js.LICENSE.txt": "/CatebzaTrading/static/js/2.73a8df87.chunk.js.LICENSE.txt",
     "static/media/Atchaar_1.a3543e05.jpg": "/CatebzaTrading/static/media/Atchaar_1.a3543e05.jpg",
     "static/media/Atchaar_2.4abf690c.jpg": "/CatebzaTrading/static/media/Atchaar_2.4abf690c.jpg",
@@ -53,7 +53,7 @@
     "static/js/runtime-main.79936d8d.js",
     "static/css/2.55d8add8.chunk.css",
     "static/js/2.73a8df87.chunk.js",
-    "static/css/main.e7f0dab0.chunk.css",
+    "static/css/main.fae0e520.chunk.css",
     "static/js/main.69632cbc.chunk.js"
   ]
 }
